@@ -12,26 +12,26 @@
   <body class="page">
     <!-- Header section -->
     <header class="page-header">
-      <div class="header-container">
+      <div class="container container__page-header">
         <nav class="nav">
-          <a class="nav__logo" href="index.html">
-            <span class="nav__logo-web" lang="en">Web</span
-            ><span class="nav__logo-studio" lang="en">Studio</span>
+          <a class="logo" href="index.html">
+            <span class="logo__web" lang="en">Web</span
+            ><span class="logo__studio" lang="en">Studio</span>
           </a>
-          <ul class="nav__list">
-            <li class="nav__item nav__item--right">
-              <a class="nav__link currentLink" href="">Студия</a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--currentLink" href="">Студия</a>
             </li>
-            <li class="nav__item nav__item--right"">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contacts">
-          <li class="header-contacts__item header-contacts__item--right">
+          <li class="header-contacts__item">
             <a
               class="header-contacts__link"
               href="mailto:info@devstudio.com"
@@ -56,7 +56,7 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <div class="hero-container">
+        <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__btn" data-modal-open>
             Заказать услугу
@@ -64,14 +64,14 @@
         </div>
       </section>
       <!-- Features section -->
-      <section class="features-section">
-        <div class="features-container features">
-          <h2 class="features-section-title">
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title section__title--hidden">
             Наши преимущества
           </h2>
-          <ul class="features__list">
-            <li class="features__item features__item--right">
-              <div class="features__icon-div">
+          <ul class="features">
+            <li class="features__item">
+              <div class="features__icon-wrap">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -82,8 +82,8 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="features__item features__item--right">
-              <div class="features__icon-div">
+            <li class="features__item">
+              <div class="features__icon-wrap">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -94,8 +94,8 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features__item features__item--right">
-              <div class="features__icon-div">
+            <li class="features__item">
+              <div class="features__icon-wrap">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -107,7 +107,7 @@
               </p>
             </li>
             <li class="features__item">
-              <div class="features__icon-div">
+              <div class="features__icon-wrap">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -122,12 +122,11 @@
         </div>
       </section>
       <!-- Our products section -->
-      <section class="products-section">
-        <div class=" products-container">
-          <h2 class="products-section-title">Чем мы занимаемся</h2>
+      <section class="section section--no-padding-top">
+        <div class="container">
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="products">
-            <li class="products__item products__item--right">
-              <div class="products__item-wrap">
+            <li class="products__item">
                 <img
                   class="products__image"
                   src="./images/desktop-soft.jpg"
@@ -135,13 +134,9 @@
                   width="370"
                   height="294"
                 />
-                <div class="products__name-wrap">
                   <p class="products__name">Десктопные приложения</p>
-                </div>
-              </div>
             </li>
-            <li class="products__item products__item--right">
-              <div class="products__item-wrap">
+            <li class="products__item">
                 <img
                   class="product__image"
                   src="./images/mob-soft.jpg"
@@ -149,13 +144,9 @@
                   width="370"
                   height="294"
                 />
-                <div class="products__name-wrap">
                   <p class="products__name">Мобильные приложения</p>
-                </div>
-              </div>
             </li>
             <li class="products__item">
-              <div class="products__item-wrap">
                 <img
                   class="product__image"
                   src="./images/design.jpg"
@@ -163,20 +154,17 @@
                   width="370"
                   height="294"
                 />
-                <div class="products__name-wrap">
                   <p class="products__name">Дизайнерские решения</p>
-                </div>
-              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- Our team section -->
-      <section class="team-section">  
-        <div class="team-container">
-          <h2 class="team-section-title">Наша команда</h2>
+      <section class="section section--other-background">  
+        <div class="container">
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team">
-            <li class="team__item team__item--right">
+            <li class="team__item">
               <img
                 class="team__image"
                 src="./images/igor-demianenko.jpg"
@@ -185,13 +173,13 @@
                 height="260"
               />
               <div class="team__member-wrap">
-                <h3 class="team__member-name">Игорь Демьяненко</h3>
-                <p class="team__member-position" lang="en">Product Designer</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item team__social-item--right">
+                <h3 class="team__title">Игорь Демьяненко</h3>
+                <p class="team__text" lang="en">Product Designer</p>
+                <ul class="social">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -199,10 +187,10 @@
                       </svg >
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="16.25">
@@ -210,10 +198,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -221,10 +209,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -235,7 +223,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item team__item--right">
+            <li class="team__item">
               <img
                 class="team__image"
                 src="./images/olga-repina.jpg"
@@ -244,15 +232,15 @@
                 height="260"
               />
               <div class="team__member-wrap">
-                <h3 class="team__member-name">Ольга Репина</h3>
-                <p class="team__member-position" lang="en">
+                <h3 class="team__title">Ольга Репина</h3>
+                <p class="team__text" lang="en">
                   Frontend Developer
                 </p>
-                <ul class="team__social-list">
-                  <li class="team__social-item team__social-item--right">
+                <ul class=" social">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -260,10 +248,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -271,10 +259,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -282,10 +270,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -296,7 +284,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item team__item--right">
+            <li class="team__item">
               <img
                 class="team__image"
                 src="./images/nikolay-tarasov.jpg"
@@ -305,13 +293,13 @@
                 height="260"
               />
               <div class="team__member-wrap">
-                <h3 class="team__member-name">Николай Тарасов</h3>
-                <p class="team__member-position" lang="en">Marketing</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item">
+                <h3 class="team__title">Николай Тарасов</h3>
+                <p class="team__text" lang="en">Marketing</p>
+                <ul class=" social">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -319,10 +307,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -330,10 +318,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -341,10 +329,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -364,13 +352,13 @@
                 height="260"
               />
               <div class="team__member-wrap">
-                <h3 class="team__member-name">Михаил Ермаков</h3>
-                <p class="team__member-position" lang="en">UI Designer</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item team__social-item--right">
+                <h3 class="team__title">Михаил Ермаков</h3>
+                <p class="team__text" lang="en">UI Designer</p>
+                <ul class=" social">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -378,10 +366,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -389,10 +377,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item team__social-item--right">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -400,10 +388,10 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team__social-item">
+                  <li class="social__item">
                     <a
                       href=""
-                      class="team__social-link"
+                      class="social__link"
                       rel="noopener noreferrer nofollow"
                     >
                       <svg class="" width="20" height="20">
@@ -417,39 +405,39 @@
           </ul>
         </div>
       </section>
-      <section class="customers-section">
-        <div class="customers-container">
-          <h2 class="customets-section-title">Постоянные клиенты</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="customers">
-            <li class="customers__item customers__item--right">
+            <li class="customers__item">
               <a class="customers__link" href="">
                 <svg class="" width="106" height="60">
                   <use href="./images/icons.svg#icon-customer-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item customers__item--right">
+            <li class="customers__item">
               <a class="customers__link" href="">
                 <svg class="" width="106" height="60">
                   <use href="./images/icons.svg#icon-customer-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item customers__item--right">
+            <li class="customers__item">
               <a class="customers__link" href="">
                 <svg class="" width="106" height="60">
                   <use href="./images/icons.svg#icon-customer-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item customers__item--right">
+            <li class="customers__item">
               <a class="customers__link" href="">
                 <svg class="" width="106" height="60">
                   <use href="./images/icons.svg#icon-customer-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item customers__item--right">
+            <li class="customers__item">
               <a class="customers__link" href="">
                 <svg class="" width="106" height="60">
                   <use href="./images/icons.svg#icon-customer-5"></use>
@@ -469,15 +457,15 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="footer-container">
+      <div class="container container--flex">
         <div class="footer-contacts">
-          <a class="footer-contacts__logo logo" href="index.html">
-            <span class="footer-contacts__logo-web" lang="en">Web</span
-            ><span class="footer-contacts__logo-studio" lang="en">Studio</span>
+          <a class=" logo" href="index.html">
+            <span class="logo__web" lang="en">Web</span
+            ><span class="logo__studio logo__studio--white" lang="en">Studio</span>
           </a>
           <address class="footer-contacts__address">
             <ul class="footer-contacts__list">
-              <li footer-contacts__item>
+              <li class="footer-contacts__item">
                 <a
                   class="footer-contacts__link footer-contacts__link--street"
                   href="https://goo.gl/maps/uAYYrMxMhEgYH2D76"
@@ -486,11 +474,11 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li footer-contacts__item>
+              <li class="footer-contacts__item">
                 <a class="footer-contacts__link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
-              </li>
+              </li  class="footer-contacts__item">
               <li>
                 <a
                   class="footer-contacts__link"
@@ -503,11 +491,11 @@
         </div>
         <div class="footer-social">
           <h3 class="footer-social__title">Присоединяйтесь</h3>
-          <ul class="footer-social__list">
-            <li class="footer-social__item footer-social__item--right">
+          <ul class="social">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -515,10 +503,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item footer-social__item--right">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -526,10 +514,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item footer-social__item--right">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -537,10 +525,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -572,16 +560,17 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop__modal">
-        <button type="button" class="backdrop__close-btn" data-modal-close>
-          <svg class="backdrop__icon-close" width="11" height="11">
+    <!-- Modal section -->
+    <div class="backdrop-wrap is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__icon-close" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="backdrop__title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form" autocomplete="off">
-          <ul class="backdrop__list">
+          <ul class="backdrop">
             <li class="backdrop__item">
               <label for="backdrop-name" class="backdrop__label">Имя</label>
               <input

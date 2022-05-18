@@ -17,10 +17,6 @@
   background-color: rgba(196, 196, 196, 1);
 }
 
-.hero-container {
-  @extend %container;
-}
-
 .hero__title {
   font-weight: 900;
   font-size: 44px;

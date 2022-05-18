@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop-wrap {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -10,7 +10,7 @@
   transition-duration: 250ms;
 }
 
-.backdrop__title {
+.modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -20,7 +20,7 @@
   color: $secondary-text-color;
 }
 
-.backdrop__list {
+.backdrop {
   @extend %list;
 }
 
@@ -171,7 +171,7 @@
   transform: scale(0) skewX(-90deg) rotateX(-90deg);
 }
 
-.backdrop__modal {
+.modal {
   padding: 40px;
   margin: auto;
   width: 528px;
@@ -185,7 +185,7 @@
   transform: scale(1) skewX(0) rotateX(0);
 }
 
-.backdrop__close-btn {
+.modal__close-btn {
   width: 30px;
   height: 30px;
   padding: 0;

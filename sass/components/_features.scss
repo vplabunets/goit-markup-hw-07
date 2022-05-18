@@ -1,20 +1,12 @@
-.features-section {
-  @extend %section;
-}
-
-.features-container {
-  @extend %container;
-}
-
-.features-section-title {
+.section__title--hidden {
   @extend %visually-hidden;
 }
-.features__list {
+.features {
   display: flex;
   @extend %list;
 }
 
-.features__item--right {
+.features__item:not(last-child) {
   margin-right: $between-li-distance;
 }
 .features__icon {
@@ -22,7 +14,7 @@
   margin-bottom: 26px;
 }
 
-.features__icon-div {
+.features__icon-wrap {
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;

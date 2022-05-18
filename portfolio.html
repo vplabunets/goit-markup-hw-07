@@ -15,28 +15,27 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-        <!-- Header section -->
     <header class="page-header">
-      <div class="header-container">
+      <div class="container container__page-header">
         <nav class="nav">
-          <a class="nav__logo logo" href="index.html">
-            <span class="nav__logo-web" lang="en">Web</span
-            ><span class="nav__logo-studio" lang="en">Studio</span>
+          <a class="logo" href="index.html">
+            <span class="logo__web" lang="en">Web</span
+            ><span class="logo__studio" lang="en">Studio</span>
           </a>
-          <ul class="nav__list">
-            <li class="nav__item nav__item--right">
-              <a class="nav__link " href="./index.html">Студия</a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="nav__item nav__item--right"">
-              <a class="nav__link currentLink" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--currentLink" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contacts">
-          <li class="header-contacts__item header-contacts__item--right">
+          <li class="header-contacts__item">
             <a
               class="header-contacts__link"
               href="mailto:info@devstudio.com"
@@ -59,23 +58,23 @@
       </div>
     </header>
     <main>
-      <section class="portfolio-section">
-        <div class="portfolio-conatiner">
-          <h1 class="portfolio__title">Наше портфолио</h1>
-          <ul class="porfolio__filter">
-            <li class="porfolio__filter-item porfolio__filter-item--right">
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title section__title--hidden">Наше портфолио</h1>
+          <ul class="porfolio-filter">
+            <li class="porfolio__filter-item">
               <button class="portfolio__btn" type="button">Все</button>
             </li>
-            <li class="porfolio__filter-item porfolio__filter-item--right">
+            <li class="porfolio__filter-item">
               <button class="portfolio__btn" type="button">Веб-сайт</button>
             </li>
-            <li class="porfolio__filter-item porfolio__filter-item--right">
+            <li class="porfolio__filter-item">
               <button class="portfolio__btn" type="button">Приложения</button>
             </li>
-            <li class="porfolio__filter-item porfolio__filter-item--right">
+            <li class="porfolio__filter-item">
               <button class="portfolio__btn" type="button">Дизайн</button>
             </li>
-            <li class="porfolio__filter-item">
+            <li class="">
               <button class="portfolio__btn" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -300,15 +299,15 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container container--flex">
         <div class="footer-contacts">
-          <a class="footer-contacts__logo logo" href="index.html">
-            <span class="footer-contacts__logo-web" lang="en">Web</span
-            ><span class="footer-contacts__logo-studio" lang="en">Studio</span>
+          <a class=" logo" href="index.html">
+            <span class="logo__web" lang="en">Web</span
+            ><span class="logo__studio logo__studio--white" lang="en">Studio</span>
           </a>
           <address class="footer-contacts__address">
             <ul class="footer-contacts__list">
-              <li footer-contacts__item>
+              <li class="footer-contacts__item">
                 <a
                   class="footer-contacts__link footer-contacts__link--street"
                   href="https://goo.gl/maps/uAYYrMxMhEgYH2D76"
@@ -317,11 +316,11 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li footer-contacts__item>
+              <li class="footer-contacts__item">
                 <a class="footer-contacts__link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
-              </li>
+              </li  class="footer-contacts__item">
               <li>
                 <a
                   class="footer-contacts__link"
@@ -334,11 +333,11 @@
         </div>
         <div class="footer-social">
           <h3 class="footer-social__title">Присоединяйтесь</h3>
-          <ul class="footer-social__list">
-            <li class="footer-social__item footer-social__item--right">
+          <ul class="social">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -346,10 +345,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item footer-social__item--right">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -357,10 +356,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item footer-social__item--right">
+            <li class="social__item footer-social__item--right">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">
@@ -368,10 +367,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
+            <li class="social__item">
               <a
                 href=""
-                class="footer-social__link"
+                class="social__link social__link--dark"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="" width="20" height="20">

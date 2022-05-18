@@ -1,23 +1,9 @@
-.customers-section {
-  @extend %section;
-}
-
-.customers-container {
-  @extend %container;
-}
-
-.customets-section-title {
-  @extend %section-title;
-  color: $secondary-text-color;
-  margin-bottom: 50px;
-}
-
 .customers {
   display: flex;
   @extend %list;
 }
 
-.customers__item--right {
+.customers__item:not(last-child) {
   margin-right: $between-li-distance;
 }
 
